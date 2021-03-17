@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Philosopher:wght@400;700&family=Poiret+One&family=Raleway:wght@400;500;600;700;800;900&family=Underdog&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style-type: none;
+}
+
+body, input, textarea, button {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+}
+
+.header {
+	position: absolute;
+	width: 100%;
+	z-index: 99;
+}
+
+.header .brand-name {
+	padding: 0 15px;
+}
+.header .brand-name a {
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 2px;
+}
+.header .nav {
+	padding: 0 15px;
+}
+
+.header li {
+	display: inline-block;
+	margin-left: 30px;
+}
+
+.header a {
+	text-decoration: none;
+	font-size: 1em;
+	font-weight: 600;
+	color: #fff;
+	padding: 25px 0;
+	display: block;
+	transition: all 0.3s ease;
+}
+.header .nav a:hover {
+	color: #ff9800;
+}
+
+.container {
+	max-width: 1170px;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.justify-content-between {
+	justify-content: space-between;
+}
+
+.align-items-center {
+	align-items: center;
+}
+/*home section*/
+.home-section {
+	min-height: 100vh;
+	background: url("../img/bg4.jpg") center;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+.home-section:before {
+	content: "";
+	position: absolute;
+	box-sizing: border-box;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #000;
+	opacity: 0.1;
+	z-index: -1;
+}
+.home-section .row {
+	min-height: 100vh;
+}
+.home-section .home-content {
+	flex: 0 0 100%;
+	max-width: 100%;
+	text-align: center;
+}
+.home-section .home-content h4 {
+	font-size: 20px;
+	color: #fff;
+}
+.home-section .home-content h1 {
+	font-size: 60px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 10px;
+}
+
